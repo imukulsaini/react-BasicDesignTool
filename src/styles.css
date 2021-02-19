@@ -10,6 +10,7 @@
 .styleSection div {
   /* font-family: 'Oi', cursive; */
   max-width:50%;
+  height:25vh;
   border:2px red solid;
   padding: 1rem;
   margin : 1rem;

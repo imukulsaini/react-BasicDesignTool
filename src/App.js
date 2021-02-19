@@ -41,9 +41,17 @@ export default function App() {
         backgroundColor: "#41a3f2",
         fontFamily: "Shadows Into Light, cursive"
       };
-    } else {
+    }if(styleChange === 4) 
+    {
+    return {
+       fontSize:pixelChange,
+       BackGroundColor:'white',
+       fontFamily:'sans-serif'
+    }
+    }else {
       return {
-        fontSize: pixelChange
+        fontSize: pixelChange,
+        backgroundColor:'none'
       };
     }
   }
@@ -62,7 +70,9 @@ export default function App() {
   function thirdStyleHandler() {
     setStyleChange(3);
   }
-
+  function resetStyle (){
+  setStyleChange(4)
+  }
 
   return (
     <div className="App">
@@ -107,6 +117,7 @@ export default function App() {
           <button onClick={thirdStyleHandler}>Click Here for Style 3</button>
         </div>{" "}
       </section>
+      <button onClick={resetStyle}>Reset</button>
     </div>
   );
 }
