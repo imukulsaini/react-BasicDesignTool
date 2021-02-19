@@ -4,20 +4,22 @@ import "./styles.css";
 export default function App() {
   const [pixelChange, setpixelChange] = useState(32);
   const [styleChange, setStyleChange] = useState(0);
-  const [text , settext] = useState('Design Tool');
+  const [text, settext] = useState("Design Tool");
 
+ 
   var bg = "BackGround Color - ";
   var fs = "Font Style - ";
-
 
   function incPixelChangeHandler() {
     var finalPixelChange = pixelChange + 8;
     setpixelChange(finalPixelChange);
   }
+
   function decPixelChangeHandler() {
     var finalPixelChange = pixelChange - 8;
     setpixelChange(finalPixelChange);
   }
+
   function finalStyle() {
     if (styleChange === 1) {
       return {
@@ -30,26 +32,27 @@ export default function App() {
       return {
         fontSize: pixelChange,
         backgroundColor: "#70ed84",
-        fontFamily: 'Lexend Mega, sans-serif'
+        fontFamily: "Lexend Mega, sans-serif"
       };
     }
     if (styleChange === 3) {
       return {
         fontSize: pixelChange,
         backgroundColor: "#41a3f2",
-        fontFamily: 'Shadows Into Light, cursive'
-      }
-    }
-    else{
-      return{
+        fontFamily: "Shadows Into Light, cursive"
+      };
+    } else {
+      return {
         fontSize: pixelChange
-      }
+      };
     }
-  }
-  function onChangeHandler (event){
-settext(event.target.value)
   }
 
+
+
+  function onChangeHandler(event) {
+    settext(event.target.value);
+  }
   function firstStyleHandler() {
     setStyleChange(1);
   }
@@ -60,28 +63,22 @@ settext(event.target.value)
     setStyleChange(3);
   }
 
+
   return (
     <div className="App">
-     Enter Text : 
-      <input  onChange={onChangeHandler} ></input>
-      {/* <input onChange={onChangeHandler}> Type here </input> */}
+      Enter Text :<input onChange={onChangeHandler}></input>
+      
       <h1 style={finalStyle()}> {text} </h1>
       <p>
         <b>Defalut Font Size is 32px</b>
       </p>
-      <button onClick={incPixelChangeHandler}>
-        Increase Size by 8
-      </button>
+      <button onClick={incPixelChangeHandler}>Increase Size by 8</button>
       <br />
-      <button onClick={decPixelChangeHandler}>
-        Decrease Size by 8
-      </button>
-
+      <button onClick={decPixelChangeHandler}>Decrease Size by 8</button>
       <p>
         {" "}
         <b>Change The Style </b>
       </p>
-
       <section className="styleSection">
         <div className="styleOne">
           <h2>Style 1 </h2>
