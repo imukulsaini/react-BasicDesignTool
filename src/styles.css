@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-
+  font-family:sans-serif;
 }
 
 
@@ -16,6 +16,11 @@
   margin : 1rem;
   display: inline-block;
   background-Color:#f1f1f1;
+}
+#resetButton {
+  width:30%;
+height:8vh;
+font-size:1.3em;
 }
 .styleSection .styleOne p #bg-color {
 color:violet

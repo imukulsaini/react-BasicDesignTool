@@ -117,7 +117,7 @@ export default function App() {
           <button onClick={thirdStyleHandler}>Click Here for Style 3</button>
         </div>{" "}
       </section>
-      <button onClick={resetStyle}>Reset</button>
+      <button id ="resetButton"onClick={resetStyle}>Reset</button>
     </div>
   );
 }
