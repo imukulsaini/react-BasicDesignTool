@@ -1,48 +1,43 @@
 .App {
   text-align: center;
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
 
-
-.styleSection{
+.styleSection {
   display: inline-block;
 }
 .styleSection div {
   /* font-family: 'Oi', cursive; */
-  max-width:50%;
-  height:25vh;
-  border:2px red solid;
+  max-width: 50%;
+  height: 25vh;
+  border: 2px red solid;
   padding: 1rem;
-  margin : 1rem;
+  margin: 1rem;
   display: inline-block;
-  background-Color:#f1f1f1;
+  background-color: #f1f1f1;
 }
 #resetButton {
-  width:30%;
-height:8vh;
-font-size:1.3em;
+  width: 10%;
+  height: 8vh;
+  font-size: 1.3em;
 }
 .styleSection .styleOne p #bg-color {
-color:violet
+  color: violet;
 }
 .styleSection .styleOne p #font-style {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
 }
 
-
 .styleSection .styleTwo p #bg-color {
-  color:#70ed84
-  }
+  color: #70ed84;
+}
 .styleSection .styleTwo p #font-style {
-  font-family: 'Lexend Mega', sans-serif;
-  }
+  font-family: "Lexend Mega", sans-serif;
+}
 
-
-  .styleSection .styleThree p #bg-color {
-    color:#41a3f2
-    }
-   .styleSection .styleThree p #font-style {
-    font-family: 'Shadows Into Light', cursive;
-
-    
-    }
+.styleSection .styleThree p #bg-color {
+  color: #41a3f2;
+}
+.styleSection .styleThree p #font-style {
+  font-family: "Shadows Into Light", cursive;
+}

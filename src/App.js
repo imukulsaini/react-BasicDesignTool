@@ -10,16 +10,20 @@ export default function App() {
   var bg = "BackGround Color - ";
   var fs = "Font Style - ";
 
+
+
   function incPixelChangeHandler() {
     var finalPixelChange = pixelChange + 8;
     setpixelChange(finalPixelChange);
   }
-
   function decPixelChangeHandler() {
     var finalPixelChange = pixelChange - 8;
     setpixelChange(finalPixelChange);
   }
 
+
+
+//  condition which Style will use
   function finalStyle() {
     if (styleChange === 1) {
       return {
@@ -57,7 +61,7 @@ export default function App() {
   }
 
 
-
+// Handler
   function onChangeHandler(event) {
     settext(event.target.value);
   }
@@ -71,8 +75,12 @@ export default function App() {
     setStyleChange(3);
   }
   function resetStyle (){
+  var finalPixelChange = 32;
+  setpixelChange(finalPixelChange)
   setStyleChange(4)
   }
+
+
 
   return (
     <div className="App">
@@ -89,7 +97,11 @@ export default function App() {
         {" "}
         <b>Change The Style </b>
       </p>
+
+      {/* section styles Card */}
+
       <section className="styleSection">
+
         <div className="styleOne">
           <h2>Style 1 </h2>
           <p>
@@ -98,6 +110,7 @@ export default function App() {
           </p>
           <button onClick={firstStyleHandler}> Click Here for Style 1</button>
         </div>
+
         <div className="styleTwo">
           <h2>Style 2 </h2>
 
@@ -117,6 +130,8 @@ export default function App() {
           <button onClick={thirdStyleHandler}>Click Here for Style 3</button>
         </div>{" "}
       </section>
+
+      {/* resetButton */}
       <button id ="resetButton"onClick={resetStyle}>Reset</button>
     </div>
   );
