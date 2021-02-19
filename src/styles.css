@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+
+}
+
+
+.styleSection{
+  display: inline-block;
+}
+.styleSection div {
+  /* font-family: 'Oi', cursive; */
+  max-width:50%;
+  border:2px red solid;
+  padding: 1rem;
+  margin : 1rem;
+  display: inline-block;
+  background-Color:#f1f1f1;
+}
+.styleSection .styleOne p #bg-color {
+color:violet
+}
+.styleSection .styleOne p #font-style {
+  font-family: 'Fredoka One', cursive;
+}
+
+
+.styleSection .styleTwo p #bg-color {
+  color:#70ed84
+  }
+.styleSection .styleTwo p #font-style {
+  font-family: 'Lexend Mega', sans-serif;
+  }
+
+
+  .styleSection .styleThree p #bg-color {
+    color:#41a3f2
+    }
+   .styleSection .styleThree p #font-style {
+    font-family: 'Shadows Into Light', cursive;
+
+    
+    }
