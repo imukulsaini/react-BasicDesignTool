@@ -89,13 +89,15 @@ export default function App() {
       <h1 style={finalStyle()}> {text} </h1>
       <p>
         <b>Defalut Font Size is 32px</b>
+        
       </p>
       <button onClick={incPixelChangeHandler}>Increase Size by 8</button>
       <br />
-      <button onClick={decPixelChangeHandler}>Decrease Size by 8</button>
+      <button onClick={decPixelChangeHandler}>Decrease Size by 8</button><br/>
+      <b>Size = {pixelChange}px</b>
       <p>
         {" "}
-        <b>Change The Style </b>
+        <b>Some Presets </b>
       </p>
 
       {/* section styles Card */}
