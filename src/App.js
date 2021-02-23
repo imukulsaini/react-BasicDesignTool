@@ -93,7 +93,7 @@ export default function App() {
       </p>
       <button onClick={incPixelChangeHandler}>Increase Size by 8</button>
       <br />
-      <button onClick={decPixelChangeHandler}>Decrease Size by 8</button><br/>
+      <button disabled ={pixelChange === 8} onClick={decPixelChangeHandler}>Decrease Size by 8</button><br/>
       <b>Size = {pixelChange}px</b>
       <p>
         {" "}
